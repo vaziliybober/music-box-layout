@@ -1,0 +1,24 @@
+{
+  "name": "music-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch /styles/scss/app.scss /styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaziliybober/layout-designer-project-lvl2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaziliybober/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/vaziliybober/layout-designer-project-lvl2#readme"
+}

@@ -1,0 +1,12 @@
+@function range($from, $to) {
+    $result: ();
+    @for $i from $from to $to {
+        $result: append($result, $i);
+    }
+
+    @return $result;
+}
+
+@function flexFontSizeFormula($minsize, $maxsize, $minviewport, $maxviewport) {
+    @return calc((100vw - #{$minviewport}) * #{($maxsize - $minsize) / ($maxviewport - $minviewport)} + #{$minsize});
+}

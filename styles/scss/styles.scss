@@ -1,0 +1,172 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.default {
+    @include reset;
+    min-width: 320px;
+    font-family: "Roboto", sans-serif;
+    color: $light-0;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    margin-top: 25px;
+
+    .container {
+        @include container;
+        max-width: 100%;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.logo {
+    display: flex;
+    order: 1;
+    margin: 0 100px 17px 0;
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+    }
+
+    span {
+        margin-top: 4px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    flex-grow: 1;
+    order: 2;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        @include reset;
+
+        li {
+            margin: 4px 36.6px 6px 0;
+
+            a {
+                text-decoration: none;
+                color: $light-30;
+            }
+        }
+
+        .current a {
+            color: $light-0;
+        }
+    }
+
+    @include media(768px) {
+        order: 3;
+    }
+    @include media(425px) {
+        max-width: 70%;
+    }
+    @include media(375px) {
+        max-width: 40%;
+    }
+}
+
+.search {
+    box-sizing: border-box;
+    min-width: 280px;
+    height: 30px;
+    padding: 0 14px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border-width: 0;
+    background: $dark;
+    order: 3;
+
+    &::placeholder {
+        color: $light-30;
+    }
+
+    @include media(768px) {
+        order: 2;
+    }
+}
+
+.banner {
+    background-image: url(../../images/banner.png);
+
+    .container {
+        @include container;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        padding-top: 250px;
+        padding-bottom: 250px;
+
+        h1 {
+            @include reset;
+            @include flexFontSize(30px, 60px, $minviewport, $maxviewport);
+            text-align: center;
+        }
+
+        h2 {
+            @include reset;
+            @include flexFontSize(18px, 30px, $minviewport, $maxviewport);
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        span {
+            @include flexFontSize(12px, 18px, $minviewport, $maxviewport);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        @include media(425px) {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+    max-width: 570px;
+}
+
+.form-input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    margin: 0 15px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 17px 20px;
+    margin-bottom: 30px;
+
+    &::placeholder {
+        color: $light-0;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.form-button {
+    box-sizing: border-box;
+    flex-grow: 1;
+    margin: 0 15px;
+    height: 50px;
+    min-width: 280px;
+    background: $green;
+    color: $light-0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}

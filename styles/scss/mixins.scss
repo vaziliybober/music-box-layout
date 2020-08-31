@@ -1,0 +1,56 @@
+@import "variables.scss";
+@import "functions.scss";
+
+@mixin font-sizes-in-px($fs-list) {
+    @each $fs in $fs-list {
+        .fs-#{$fs}p {
+            font-size: #{$fs}px;
+        }
+    }
+}
+
+@mixin media($n, $first: desktop) {
+    @if ($first == desktop) {
+        @media screen and (max-width: $n) {
+            @content;
+        }
+    }
+
+    @if ($first == mobile) {
+        @media screen and (min-width: $n) {
+            @content;
+        }
+    }
+}
+
+@mixin reset {
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 40px;
+
+
+    @include media(768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@mixin flexFontSize($minsize, $maxsize, $minviewport, $maxviewport) {
+    font-size: flexFontSizeFormula($minsize, $maxsize, $minviewport, $maxviewport);
+
+    @include media($minviewport, desktop) {
+        font-size: $minsize;
+    }
+
+    @include media($maxviewport, mobile) {
+        font-size: $maxsize;
+    }
+}
