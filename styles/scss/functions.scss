@@ -7,6 +7,6 @@
     @return $result;
 }
 
-@function flexFontSizeFormula($minsize, $maxsize, $minviewport, $maxviewport) {
-    @return calc((100vw - #{$minviewport}) * #{($maxsize - $minsize) / ($maxviewport - $minviewport)} + #{$minsize});
+@function flexFontSizeFormula($minsize, $maxsize, $viewport-min, $viewport-max) {
+    @return calc((100vw - #{$viewport-min}) * #{($maxsize - $minsize) / ($viewport-max - $viewport-min)} + #{$minsize});
 }

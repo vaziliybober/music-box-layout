@@ -41,14 +41,14 @@
 
 }
 
-@mixin flexFontSize($minsize, $maxsize, $minviewport, $maxviewport) {
-    font-size: flexFontSizeFormula($minsize, $maxsize, $minviewport, $maxviewport);
+@mixin flexFontSize($minsize, $maxsize, $viewport-min, $viewport-max) {
+    font-size: flexFontSizeFormula($minsize, $maxsize, $viewport-min, $viewport-max);
 
-    @include media($minviewport, desktop) {
+    @include media($viewport-min, desktop) {
         font-size: $minsize;
     }
 
-    @include media($maxviewport, mobile) {
+    @include media($viewport-max, mobile) {
         font-size: $maxsize;
     }
 }

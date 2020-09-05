@@ -5,7 +5,7 @@
     @include reset;
     min-width: 320px;
     font-family: "Roboto", sans-serif;
-    color: $light-0;
+    color: $color-light-0;
 }
 
 .header {
@@ -58,12 +58,12 @@
 
             a {
                 text-decoration: none;
-                color: $light-30;
+                color: $color-light-30;
             }
         }
 
         .current a {
-            color: $light-0;
+            color: $color-light-0;
         }
     }
 
@@ -86,11 +86,11 @@
     margin-bottom: 20px;
     border-radius: 50px;
     border-width: 0;
-    background: $dark;
+    background: $color-dark;
     order: 3;
 
     &::placeholder {
-        color: $light-30;
+        color: $color-light-30;
     }
 
     @include media(768px) {
@@ -114,19 +114,19 @@
 
         h1 {
             @include reset;
-            @include flexFontSize(30px, 60px, $minviewport, $maxviewport);
+            @include flexFontSize(30px, 60px, $viewport-min, $viewport-max);
             text-align: center;
         }
 
         h2 {
             @include reset;
-            @include flexFontSize(18px, 30px, $minviewport, $maxviewport);
+            @include flexFontSize(18px, 30px, $viewport-min, $viewport-max);
             text-align: center;
             margin-bottom: 45px;
         }
 
         span {
-            @include flexFontSize(12px, 18px, $minviewport, $maxviewport);
+            @include flexFontSize(12px, 18px, $viewport-min, $viewport-max);
             text-align: center;
             margin-bottom: 40px;
         }
@@ -157,7 +157,7 @@
     margin-bottom: 30px;
 
     &::placeholder {
-        color: $light-0;
+        color: $color-light-0;
         font-weight: bold;
         font-size: 14px;
     }
@@ -169,15 +169,15 @@
     margin: 0 15px;
     height: 50px;
     min-width: 280px;
-    background: $green;
-    color: $light-0;
+    background: $color-green;
+    color: $color-light-0;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
 
 .bg-darker {
-    background: $darker;
+    background: $color-darker;
 
     .container {
         @include container;
@@ -186,7 +186,7 @@
 
         h2 {
             @include reset;
-            @include flexFontSize(20px, 38px, $minviewport, $maxviewport);
+            @include flexFontSize(20px, 38px, $viewport-min, $viewport-max);
             margin-bottom: 25px;
             text-align: center;
             text-transform: uppercase;
@@ -200,7 +200,7 @@
         }
 
         .additional-info {
-            @include flexFontSize(11px, 22px, $minviewport, $maxviewport);
+            @include flexFontSize(11px, 22px, $viewport-min, $viewport-max);
             text-align: center;
             margin-top: 25px;
         }
@@ -221,7 +221,7 @@
         left: 0;
         right: 0;
         top: 0;
-        @include flexFontSize(16px, 24px, $minviewport, 390px);
+        @include flexFontSize(16px, 24px, $viewport-min, 390px);
 
         text-transform: uppercase;
     }
@@ -260,8 +260,8 @@
             background: transparent;
             max-width: 100%;
 
-            color: $light-0;
-            @include flexFontSize(12px, 24px, $minviewport, 390px);
+            color: $color-light-0;
+            @include flexFontSize(12px, 24px, $viewport-min, 390px);
             text-transform: uppercase;
         }
 
