@@ -104,6 +104,7 @@
 
 .banner {
   background-image: url(../../images/banner.png);
+  background-repeat: round;
 }
 .banner .container {
   margin: 0 auto;
