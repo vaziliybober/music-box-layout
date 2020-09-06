@@ -3,99 +3,8 @@
 
 .default {
     @include reset;
-    min-width: 320px;
     font-family: "Roboto", sans-serif;
     color: $color-light-0;
-}
-
-.header {
-    position: absolute;
-    width: 100%;
-    margin-top: 25px;
-
-    .container {
-        @include container;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        font-size: 11px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-}
-
-.logo {
-    display: flex;
-    order: 1;
-    margin: 0 100px 17px 0;
-
-    img {
-        width: 20px;
-        height: 20px;
-        margin-right: 4px;
-    }
-
-    span {
-        margin-top: 4px;
-    }
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-
-    flex-grow: 1;
-    order: 2;
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        @include reset;
-
-        li {
-            margin: 4px 36.6px 6px 0;
-
-            a {
-                text-decoration: none;
-                color: $color-light-30;
-            }
-        }
-
-        .current a {
-            color: $color-light-0;
-        }
-    }
-
-    @include media(768px) {
-        order: 3;
-    }
-    @include media(425px) {
-        max-width: 70%;
-    }
-    @include media(375px) {
-        max-width: 40%;
-    }
-}
-
-.search {
-    box-sizing: border-box;
-    min-width: 280px;
-    height: 30px;
-    padding: 0 14px;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    border-width: 0;
-    background: $color-dark;
-    order: 3;
-
-    &::placeholder {
-        color: $color-light-30;
-    }
-
-    @include media(768px) {
-        order: 2;
-    }
 }
 
 .banner {
@@ -103,7 +12,7 @@
     background-repeat: round;
 
     .container {
-        @include container;
+        
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -131,7 +40,7 @@
             margin-bottom: 40px;
         }
 
-        @include media(425px) {
+        @include media(small-3) {
             padding-bottom: 50px;
         }
     }
@@ -180,7 +89,6 @@
     background: $color-darker;
 
     .container {
-        @include container;
         padding-top: 100px;
         padding-bottom: 50px;
 

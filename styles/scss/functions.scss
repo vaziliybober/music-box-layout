@@ -10,3 +10,19 @@
 @function flexFontSizeFormula($minsize, $maxsize, $viewport-min, $viewport-max) {
     @return calc((100vw - #{$viewport-min}) * #{($maxsize - $minsize) / ($viewport-max - $viewport-min)} + #{$minsize});
 }
+
+@function reversedMap($map) {
+    $keys: map-keys($map);
+    $map-reversed: ();
+
+    @for $i from length($keys) through 1 {
+        $map-reversed: map-merge(
+            $map-reversed,
+            (
+                nth($keys, $i): map-get($map, nth($keys, $i)),
+            )
+        );
+    }
+
+    @return $map-reversed;
+}

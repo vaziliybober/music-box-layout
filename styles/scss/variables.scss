@@ -16,12 +16,21 @@ $color-orange-darker: #95390c;
 $gradient-footer: linear-gradient(89.02deg, #5328A1 32.83%, #95390C 81.56%);
 
 $breakpoints: (
-  1280px,
-  1024px,
-  768px,
-  425px,
-  375px,
-  320px
+  small: 320px,
+  small-2: 375px,
+  small-3: 425px,
+  medium: 768px,
+  large: 1024px,
+  large-2: 1280px
+);
+
+$spacings: (
+  small: 20px,
+  small-2: 20px,
+  small-3: 20px,
+  medium: 30px,
+  large: 40px,
+  large-2: 40px
 );
 
 $viewport-min: 320px;
