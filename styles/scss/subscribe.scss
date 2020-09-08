@@ -47,6 +47,10 @@
     top: 0;
     @include flexFontSize(16px, 24px, $viewport-min, 390px);
     text-transform: uppercase;
+
+    @include media(small-2) {
+      margin-top: 20px;
+    }
   }
 
   .subscribe-info {
@@ -63,6 +67,10 @@
       display: flex;
       margin: 20px 0;
 
+      @include media(small-2) {
+        margin-bottom: 10px;
+      }
+
       .value {
         font-size: 60px;
       }
@@ -76,18 +84,17 @@
 
     .button {
       margin: 20px;
-      width: 300px;
+      width: 100%;
       height: 70px;
       padding: 13px;
       border: 4px solid #ffffff;
       box-sizing: border-box;
       background: transparent;
-      max-width: 100%;
       color: $color-light-0;
       @include flexFontSize(12px, 24px, $viewport-min, 390px);
       text-transform: uppercase;
 
-      @include media(small-2) {
+      @include media(small) {
         height: 55px;
       }
     }
@@ -96,6 +103,10 @@
       font-size: 11px;
       text-align: center;
       margin: 20px 0 60px 0;
+
+      @include media(small-2) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
