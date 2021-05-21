@@ -10,7 +10,54 @@
   src: url('../fonts/Roboto-Bold.ttf');
 }
 
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+$breakpoint: 850px;
+
 body {
   font-family: 'Roboto', 'Times New Roman', sans-serif;
-  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #cacaca;
+  background: #08020d;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $breakpoint) {
+    font-size: 6rem;
+    line-height: 9rem;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $breakpoint) {
+    font-size: 3.8rem;
+    line-height: 5.7rem;
+  }
 }
