@@ -1,3 +1,16 @@
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 700; /* Соответствует значению bold */
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+
 body {
   margin: 0;
+  font-family: 'Roboto', 'Times New Roman', sans-serif;
 }
