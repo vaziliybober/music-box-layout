@@ -1,3 +1,7 @@
+@use './colors.scss';
+@use './header.scss';
+@use './banner.scss';
+
 @font-face {
   font-family: 'Roboto';
   font-weight: 400; /* Соответствует значению normal */
@@ -24,21 +28,25 @@ body,
 h1,
 h2,
 h3,
-p {
+p,
+ul,
+li {
   margin: 0;
+  padding: 0;
 }
 
 $breakpoint: 850px;
 
 body {
-  background: #08020d;
-  color: #cacaca;
+  background: colors.$dark-700;
+  color: colors.$light-400;
   font-family: 'Roboto', 'Times New Roman', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
 h1 {
+  color: colors.$light-100;
   font-size: 3rem;
   font-weight: bold;
   line-height: 4.5rem;
@@ -51,6 +59,7 @@ h1 {
 }
 
 h2 {
+  color: colors.$light-100;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.7rem;
@@ -60,4 +69,10 @@ h2 {
     font-size: 3.8rem;
     line-height: 5.7rem;
   }
+}
+
+header,
+section,
+footer {
+  padding: 0 2rem;
 }

@@ -9,19 +9,19 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo" id="logo" />
-        <label for="logo">Music box</label>
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="logo" id="logo-img-1" />
+        <label for="logo-img-1">Music box</label>
       </div>
       <nav>
-        <ul>
+        <ul class="header-nav">
           <li>Главная</li>
           <li>Каталог</li>
-          <li>Исполнители</li>
+          <li class="header-nav-current">Исполнители</li>
           <li>Контакты</li>
         </ul>
       </nav>
-      <input type="search" name="search" id="search" placeholder="поиск..." />
+      <input class="header-search" type="search" placeholder="поиск..." />
     </header>
 
     <main>
@@ -32,9 +32,9 @@
           Получите доступ всего за несколько шагов. Заполните форму ниже и
           откройте мир музыки
         </p>
-        <form>
-          <input type="text" placeholder="Имя" />
-          <input type="text" placeholder="Email" />
+        <form class="access-form">
+          <input type="text" placeholder="Имя" value="Имя" />
+          <input type="text" placeholder="Email" value="Email" />
           <button type="submit">Получить доступ</button>
         </form>
       </section>
