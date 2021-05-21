@@ -8,25 +8,192 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, porro.
-    </h1>
-    <h2>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quibusdam
-      aliquam mollitia rerum molestias impedit.
-    </h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-      quibusdam harum dolore magni expedita, nostrum, delectus tempore pariatur
-      aliquid dignissimos quia voluptatum earum vel, corporis libero! Beatae
-      molestiae cupiditate blanditiis aliquam accusantium reiciendis saepe
-      minima fuga facilis temporibus sit, ullam quibusdam! Possimus perferendis
-      molestiae magni vel, id, repellat eum impedit odio harum, recusandae omnis
-      alias ab veniam. Numquam est possimus veniam facere aliquam deleniti esse
-      id ipsa perspiciatis hic, recusandae ex alias cupiditate quos magni optio
-      vero aperiam distinctio eveniet nam ratione non assumenda. A, quaerat
-      corrupti? Eaque repellendus consequatur voluptatum doloribus repellat sunt
-      iure, error placeat. Optio, praesentium quibusdam.
-    </p>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" id="logo" />
+        <label for="logo">Music box</label>
+      </div>
+      <nav>
+        <ul>
+          <li>Главная</li>
+          <li>Каталог</li>
+          <li>Исполнители</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+      <input type="search" name="search" id="search" placeholder="поиск..." />
+    </header>
+
+    <main>
+      <section class="banner">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>Без ограничений</h2>
+        <p>
+          Получите доступ всего за несколько шагов. Заполните форму ниже и
+          откройте мир музыки
+        </p>
+        <form>
+          <input type="text" placeholder="Имя" />
+          <input type="text" placeholder="Email" />
+          <button type="submit">Получить доступ</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Формы подписки</h2>
+        <div class="subscribe-list">
+          <div class="subscribe">
+            <h3>Бесплатная</h3>
+            <div class="price">
+              <div class="value">0</div>
+              <div class="currency">руб</div>
+            </div>
+            <button type="button">Оформить</button>
+            <p>
+              Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей
+              коллекции музыки. Присутствует реклама
+            </p>
+          </div>
+          <div class="subscribe">
+            <h3>Стандартная</h3>
+            <div class="price">
+              <div class="value">250</div>
+              <div class="currency">руб</div>
+            </div>
+            <button type="button">Оформить</button>
+            <p>
+              Оплата в месяц. Стандартный тариф предоставляет доступ ко всей
+              коллекции музыки в среднем качестве
+            </p>
+          </div>
+          <div class="subscribe">
+            <h3>Премиум</h3>
+            <div class="price">
+              <div class="value">500</div>
+              <div class="currency">руб</div>
+            </div>
+            <button type="button">Оформить</button>
+            <p>
+              Оплата в месяц. Премиум тариф предоставляет доступ ко всей
+              коллекции музыки в высоком качестве
+            </p>
+          </div>
+        </div>
+        <p>
+          На всех тарифах возможно прослушивание музыки с мобильных устройств.
+          На премиум тарифе вы можете скачать все композиции на ваше устройство
+          и слушать музыку без подключения к интернету
+        </p>
+      </section>
+
+      <section>
+        <h2>Последние новости</h2>
+        <div class="news-list">
+          <div class="news">
+            <img
+              src="./images/Music to Be Murdered By.png"
+              alt="Eminem - Music To Be Murdered By"
+            />
+            <h3>Music to be murdered by</h3>
+            <p>
+              Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем
+              сервисе. На альбоме вас ждёт 20 новых треков.
+            </p>
+            <div class="post-info">
+              <img src="./images/avatar.png" alt="avatar" id="avatar-1" />
+              <label for="avatar-1">Music box</label>
+              <div class="date">17/01/2020</div>
+            </div>
+            <button type="button">К альбому</button>
+          </div>
+          <div class="news">
+            <img
+              src="./images/Ordinary Man.png"
+              alt="Ozzy Osbourne - Ordinary Man"
+            />
+            <h3>Ordinary man</h3>
+            <p>
+              Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом
+              Ordinary Man. Слушайте в числе первых на Music Box
+            </p>
+            <div class="post-info">
+              <img src="./images/avatar.png" alt="avatar" id="avatar-2" />
+              <label for="avatar-2">Music box</label>
+              <div class="date">24/02/2020</div>
+            </div>
+            <button type="button">К альбому</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Мобильное приложение</h2>
+        <img src="./images/iphone.png" alt="IPhones" />
+        <p>
+          Воспользуйтесь нашим мобильным приложением. Оно позволит слушать
+          музыку с любого устройства на базе операционных систем Androind и iOS
+        </p>
+        <p>
+          С тарифом «Премиум» приложение позволяет скачивать все композиции из
+          нашей коллекции. Вы можете слушать музыку даже без интернета.
+        </p>
+        <button type="button">Скачать</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="upper">
+        <div class="about-us">
+          <h2>О нас</h2>
+          <ul>
+            <li>История компании</li>
+            <li>Карьера</li>
+            <li>Особенности</li>
+            <li>Пресса</li>
+          </ul>
+        </div>
+
+        <div class="support">
+          <h2>Поддержка</h2>
+          <ul>
+            <li>База знаний</li>
+            <li>Тарифы</li>
+            <li>Мобильное приложение</li>
+            <li>Условия использования</li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <h2>Контакты</h2>
+          <ul>
+            <li>hello@music.box</li>
+            <li>Russia, Moscow. Music Box studio</li>
+            <li>+ 7 499 999 99 99</li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <h2>Подписывайтесь</h2>
+          <ul>
+            <li><img src="./images/Google+.png" alt="Google+" /></li>
+            <li><img src="./images/Twitter.png" alt="Google+" /></li>
+            <li><img src="./images/Facebook.png" alt="Google+" /></li>
+            <li><img src="./images/Instagram.png" alt="Google+" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="lower">
+        <ul>
+          <li>Магазин</li>
+          <li>Обслуживание</li>
+          <li>Блог</li>
+          <li>Поддержка</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

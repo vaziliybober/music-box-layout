@@ -31,17 +31,17 @@ p {
 $breakpoint: 850px;
 
 body {
+  background: #08020d;
+  color: #cacaca;
   font-family: 'Roboto', 'Times New Roman', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #cacaca;
-  background: #08020d;
 }
 
 h1 {
   font-size: 3rem;
-  line-height: 4.5rem;
   font-weight: bold;
+  line-height: 4.5rem;
   text-transform: uppercase;
 
   @media only screen and (min-width: $breakpoint) {
@@ -52,8 +52,8 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  line-height: 2.7rem;
   font-weight: bold;
+  line-height: 2.7rem;
   text-transform: uppercase;
 
   @media only screen and (min-width: $breakpoint) {
