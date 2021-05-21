@@ -1,6 +1,7 @@
 @use './colors.scss';
 @use './header.scss';
 @use './banner.scss';
+@use './subscribe.scss';
 
 @font-face {
   font-family: 'Roboto';
@@ -35,6 +36,11 @@ li {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 $breakpoint: 850px;
 
 body {
@@ -45,12 +51,17 @@ body {
   line-height: 1.5;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: colors.$light-100;
-  font-size: 3rem;
   font-weight: bold;
-  line-height: 4.5rem;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
 
   @media only screen and (min-width: $breakpoint) {
     font-size: 6rem;
@@ -59,11 +70,8 @@ h1 {
 }
 
 h2 {
-  color: colors.$light-100;
   font-size: 1.8rem;
-  font-weight: bold;
   line-height: 2.7rem;
-  text-transform: uppercase;
 
   @media only screen and (min-width: $breakpoint) {
     font-size: 3.8rem;
@@ -75,4 +83,18 @@ header,
 section,
 footer {
   padding: 0 2rem;
+}
+
+header {
+  margin-top: 2.5rem;
+  position: absolute;
+  width: 100%;
+}
+
+section {
+  padding-top: 10rem;
+
+  &:last-child {
+    padding-bottom: 10rem;
+  }
 }

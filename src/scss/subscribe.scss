@@ -1,0 +1,83 @@
+@use './colors.scss';
+
+.subscribe-section {
+  color: colors.$light-100;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 4.5rem;
+  }
+
+  p {
+    padding-top: 2rem;
+  }
+}
+
+.subscribe-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.subscribe {
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 62rem;
+  padding: 1.5rem 3rem 9rem;
+  width: 37.5rem;
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 18rem;
+  }
+
+  button {
+    background: transparent;
+    border: 1px solid colors.$light-100;
+    border-radius: 0.5rem;
+    color: colors.$light-100;
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+.price {
+  display: flex;
+  margin-bottom: 2.5rem;
+
+  .value {
+    font-size: 6.4rem;
+  }
+
+  .currency {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+}
+
+.price > .currency::after {
+  content: '.';
+}
+
+.sub-free {
+  background-image: url('../images/subscribe_1.png');
+}
+
+.sub-standart {
+  background-image: url('../images/subscribe_2.png');
+}
+
+.sub-premium {
+  background-image: url('../images/subscribe_3.png');
+}
