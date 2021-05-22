@@ -14,9 +14,9 @@
 }
 
 .subscribe-list {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2.5rem;
 }
 
@@ -24,6 +24,7 @@
   align-items: center;
   background-position: center;
   background-size: cover;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   height: 62rem;
@@ -32,7 +33,7 @@
 
   h3 {
     font-size: 1.6rem;
-    margin-bottom: 18rem;
+    margin-bottom: 20rem;
   }
 
   button {
@@ -54,20 +55,22 @@
 
 .price {
   display: flex;
+  gap: 1.5rem;
   margin-bottom: 2.5rem;
-
-  .value {
-    font-size: 6.4rem;
-  }
-
-  .currency {
-    font-size: 3.2rem;
-    text-transform: uppercase;
-  }
 }
 
-.price > .currency::after {
-  content: '.';
+.price > .value {
+  font-size: 6.4rem;
+  line-height: 1em;
+}
+
+.price > .currency {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+
+  &::after {
+    content: '.';
+  }
 }
 
 .sub-free {

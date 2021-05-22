@@ -43,6 +43,7 @@ header {
   background: colors.$dark-400;
   border-radius: 5rem;
   border-width: 0;
+  color: colors.$light-400;
   max-width: 37.5rem;
   padding: 0.3rem 1rem;
 
@@ -50,5 +51,9 @@ header {
     color: colors.$light-400;
     font-size: 1.33rem;
     text-transform: uppercase;
+  }
+
+  &:focus {
+    outline: none;
   }
 }

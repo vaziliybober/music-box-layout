@@ -2,6 +2,7 @@
 @use './header.scss';
 @use './banner.scss';
 @use './subscribe.scss';
+@use './last-news.scss';
 
 @font-face {
   font-family: 'Roboto';
@@ -62,21 +63,11 @@ h3 {
 h1 {
   font-size: 3rem;
   line-height: 4.5rem;
-
-  @media only screen and (min-width: $breakpoint) {
-    font-size: 6rem;
-    line-height: 9rem;
-  }
 }
 
 h2 {
   font-size: 1.8rem;
   line-height: 2.7rem;
-
-  @media only screen and (min-width: $breakpoint) {
-    font-size: 3.8rem;
-    line-height: 5.7rem;
-  }
 }
 
 header,
@@ -86,6 +77,8 @@ footer {
 }
 
 header {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2.5rem;
   position: absolute;
   width: 100%;

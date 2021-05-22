@@ -1,0 +1,61 @@
+@use './colors.scss';
+
+.last-news-section {
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.news > img {
+  margin-bottom: 5rem;
+  max-width: 57.5rem;
+  width: 100%;
+}
+
+.news-body {
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    background: transparent;
+    border: 1px solid colors.$light-400;
+    border-radius: 0.5rem;
+    color: colors.$light-400;
+    font-size: 1.3rem;
+    padding: 1.6rem 3rem;
+    text-transform: uppercase;
+  }
+}
+
+.post-info {
+  align-items: center;
+  display: flex;
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+
+  img {
+    height: 1.9rem;
+    width: 1.9rem;
+  }
+
+  label {
+    color: colors.$accent-2;
+    text-transform: uppercase;
+  }
+}
